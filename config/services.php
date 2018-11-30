@@ -40,9 +40,9 @@ return [
         ],
     ],
     'facebook' => [
-        'client_id' => '549461428848995',         // Your Facebook App Client ID
-        'client_secret' => '9ca609c0daed8fb908ca328db12eb279', // Your Facebook App Client Secret
-        'redirect' => 'http://localhost:8000/login/facebook/callback', // Your application route used to redirect users back to your app after authentication
+        'client_id' => env('FACEBOOK_APP_ID'),         // Your Facebook App Client ID
+        'client_secret' => env('FACEBOOK_APP_SECRET'), // Your Facebook App Client Secret
+        'redirect' => env('FACEBOOK_REDIRECT'), // Your application route used to redirect users back to your app after authentication
     ],
 
 ];
